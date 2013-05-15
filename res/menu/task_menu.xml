@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/addTaskItem"
+        android:alphabeticShortcut="a"
+        android:title="@string/add_menu"
+        android:titleCondensed="@string/add_menu"/>
+    
+    <item
+        android:id="@+id/deleteAllItems"
+        android:alphabeticShortcut="d"
+        android:title="@string/delete_all"
+        android:titleCondensed="@string/delete_all"/>
+
+</menu>

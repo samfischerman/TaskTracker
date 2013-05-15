@@ -1,0 +1,193 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="19dp"
+                android:layout_marginLeft="17dp"
+                android:text="Back" />
+
+            <Button
+                android:id="@+id/btnFreezeActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/btnStartActivity"
+                android:layout_alignBottom="@+id/btnStartActivity"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@+id/btnStartActivity"
+                android:text="Freeze Activity" />
+
+            <Spinner
+                android:id="@+id/spnAllActivities"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" />
+
+            <Spinner
+                android:id="@+id/spnAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/etLocation"
+                android:entries="@array/arrActivities" />
+
+            <!--
+            
+            <TextView
+                android:id="@+id/tvEndTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btnFreezeActivity"
+                android:layout_alignLeft="@+id/tvStartTime"
+                android:layout_marginBottom="17dp"
+                android:text="00:00:00" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_below="@+id/tvStartTime"
+                android:text="End Time: " />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView3"
+                android:layout_alignBottom="@+id/textView3"
+                android:layout_toLeftOf="@+id/tvActivity"
+                android:text="Activity: " />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/textView6"
+                android:layout_alignParentLeft="true"
+                android:text="Location: " />
+
+            <TextView
+                android:id="@+id/tvLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tvActivity"
+                android:layout_alignLeft="@+id/tvActivity"
+                android:text="Room 102" />
+
+            <TextView
+                android:id="@+id/tvActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView6"
+                android:layout_alignBottom="@+id/textView6"
+                android:layout_toRightOf="@+id/textView4"
+                android:text="Walking" />
+
+            <TextView
+                android:id="@+id/tvStartTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tvEndTime"
+                android:layout_alignRight="@+id/btnFreezeActivity"
+                android:layout_marginRight="19dp"
+                android:text="00:00:00" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tvEndTime"
+                android:layout_toLeftOf="@+id/tvEndTime"
+                android:text="Start time: " />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/textView4"
+                android:layout_alignParentLeft="true"
+                android:text="Observed:" />
+
+            <TextView
+                android:id="@+id/tvObserved"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tvLocation"
+                android:layout_alignLeft="@+id/tvLocation"
+                android:text="Dr. One" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tvObserved"
+                android:layout_alignLeft="@+id/textView2"
+                android:text="Observer:" />
+
+            <TextView
+                android:id="@+id/tvObserver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView7"
+                android:layout_alignLeft="@+id/tvStartTime"
+                android:text="Student One" />
+                
+                -->
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/btnStartActivity"
+                android:layout_below="@+id/spnAllActivities"
+                android:text="Location:" />
+
+            <EditText
+                android:id="@+id/etLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView1"
+                android:layout_alignBottom="@+id/textView1"
+                android:layout_alignRight="@+id/btnFreezeActivity"
+                android:ems="10"
+                android:text="Room 102" >
+
+                <requestFocus />
+            </EditText>
+
+            <Button
+                android:id="@+id/btnStartActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/back"
+                android:layout_centerVertical="true"
+                android:text="Start Activity" />
+
+            <Button
+                android:id="@+id/btnViewActivities"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/btnFreezeActivity"
+                android:layout_below="@+id/btnFreezeActivity"
+                android:layout_marginTop="21dp"
+                android:text="View Activities" />
+
+            <Button
+                android:id="@+id/btnPublish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/btnViewActivities"
+                android:layout_alignLeft="@+id/btnStartActivity"
+                android:layout_alignRight="@+id/btnStartActivity"
+                android:text="Push Database" />
+    
+</RelativeLayout>

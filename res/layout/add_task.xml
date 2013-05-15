@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="fill_parent" 
+   android:layout_height="wrap_content" android:layout_weight="1">
+   
+   <LinearLayout android:id="@+id/linearLayout"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical" 
+      android:padding="5dp">
+      
+      <EditText android:id="@+id/activityEdit"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content" 
+         android:imeOptions="actionNext" 
+         android:hint="@string/activity_hint"
+         android:inputType="textPersonName|textCapWords"/>
+      
+      <EditText android:id="@+id/locationEdit"
+         android:layout_width="fill_parent" 
+         android:layout_height="wrap_content" 
+         android:imeOptions="actionNext" 
+         android:hint="@string/location_hint"
+         android:inputType="textPersonName|textCapWords"/>
+      
+      <EditText android:id="@+id/starttimeEdit" 
+         android:layout_width="fill_parent" 
+         android:layout_height="wrap_content" 
+         android:imeOptions="actionNext" 
+         android:hint="@string/starttime_hint" 
+         android:inputType="time"/>
+      
+      <EditText android:id="@+id/endtimeEdit" 
+         android:layout_width="fill_parent" 
+         android:layout_height="wrap_content" 
+         android:imeOptions="actionNext" 
+         android:hint="@string/endtime_hint" 
+         android:inputType="time"/>
+      
+      <EditText android:id="@+id/observedEdit" 
+         android:layout_width="fill_parent" 
+         android:layout_height="wrap_content" 
+         android:imeOptions="actionNext" 
+         android:hint="@string/observed_hint" 
+         android:inputType="textPersonName|textCapWords"/>
+      
+      <EditText android:id="@+id/observerEdit" 
+         android:layout_width="fill_parent" 
+         android:layout_height="wrap_content" 
+         android:imeOptions="actionNext" 
+         android:hint="@string/observer_hint" 
+         android:inputType="textPersonName|textCapWords"/>
+            
+      <Button android:id="@+id/saveBtn" 
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="15dp"
+         android:layout_gravity="center_horizontal"
+         android:text="@string/save_btn"/>
+   </LinearLayout>
+</ScrollView>

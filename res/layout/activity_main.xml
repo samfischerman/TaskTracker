@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/txtTracking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="@string/Observed" />
+
+    <Spinner
+        android:id="@+id/spnObserved"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtTracking"
+        android:entries="@array/arrObserved"
+        android:prompt="@string/strObservedPrompt" />
+
+    <TextView
+        android:id="@+id/txtObserver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/spnObserved"
+        android:text="@string/Observer" />
+
+    <Spinner
+        android:id="@+id/spnObserver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtObserver"
+        android:entries="@array/arrObserver"
+        android:prompt="@string/strObserverPrompt" />
+
+    <Button
+        android:id="@+id/btnBeginSurvey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/spnObserver"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="58dp"
+        android:text="@string/strBeginSurvey" />
+    
+</RelativeLayout>
